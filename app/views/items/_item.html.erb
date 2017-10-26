@@ -1,3 +1,2 @@
-<% if @item.user == current_user %>
-    <p><%= item.name %></p>
-<% end %>
+<p><%= item.name %> <%= link_to "Delete", item, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+</p>

@@ -1,9 +1,9 @@
 <h2>Your To-Do List</h2>
 <% if current_user %>
-<div class="col-md-8">
-        <%= render partial: 'items/item' %>
+    <div class="col-md-4" style="float:right;">
+        <%= render "items/form" %>
     </div>
     <div class="col-md-8">
-        <%= render partial: 'items/form' %>
-    </div>
+            <%= render @items %>
+        </div>
 <% end %>
