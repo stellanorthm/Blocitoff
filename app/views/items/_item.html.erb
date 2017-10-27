@@ -1,2 +1,2 @@
-<p><%= item.name %> <%= link_to "Delete", item, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+<p><%= item.name %></br><small><%= link_to "Delete", item, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %> • <%= distance_of_time_in_words(Time.now, item.created_at.to_date + 7 ) %> days left.</small>
 </p>
